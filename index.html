@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devika T V - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!--
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Devika T V</a>
+        </div>
+    </nav>
+    -->
+    <!-- Header -->
+    
+    <header class="text-center">
+        <h1>Hi, I'm Devika T V...!!</h1>
+        <h3>Student Engineer </h3>
+        <p>Python | Flask | Django | Machine Learning | Content Writing</p>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Devika T V" class="profile-img">
+        <p>I am a passionate Computer Science student with a foundational knowledge in Python, MongoDB, Flask, Django, and Machine Learning. I have experience in content writing, leadership, and event coordination. As an IEEE volunteer, I have demonstrated strong communication and organizational skills. My goal is to work in a tech-driven, innovative environment where I can continuously learn and contribute.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card" onclick="openModal('project1-modal')">
+        <h3>ResQlink</h3>
+        <p>Kidnap Detection and Emergency Alert System</p>
+    </div>
+    <!--
+    <div class="card" onclick="openModal('project2-modal')">
+        <h3>Project 2</h3>
+        <p>Another project description.</p>
+    </div>
+    -->
+</section>
+
+<!-- Project Details Modals -->
+<div id="project1-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project1-modal')">&times;</span>
+        <h3>ResQlink</h3>
+        <p><strong>Description:</strong> ResQlink is a smart safety web app that detects emergencies through a predefined codeword. When spoken, it triggers real-time alerts via email and SMS to emergency contacts, including live location, captured image, nearest police station details, and weapon detection.
+
+        If speaking isn’t an option, a chatbot assists with distress signaling and travel monitoring. Leveraging AI and real-time communication, ResQlink ensures swift emergency response and enhanced personal security.</p>
+        <p><strong>Technologies Used:</strong> Python, MondoDB, Flask, Machine Learning, Twilio API.</p>
+        <!--<p><strong>GitHub Link:</strong> <a href="https://github.com/yourusername/resqvoice" target="_blank">ResQlink</a></p>-->
+    </div>
+</div>
+
+<div id="project2-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project2-modal')">&times;</span>
+        <h3>Project 2</h3>
+        <p><strong>Description:</strong> Another project description.</p>
+        <p><strong>Technologies Used:</strong> Python, Django, MongoDB.</p>
+        <p><strong>GitHub Link:</strong> <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a></p>
+    </div>
+</div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Python | Flask | Django | Machine Learning | MongoDB | Content Writing | Leadership | Documentation | Team work | Communication | Problem Solving </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:devikatv2410@gmail.com" class="btn-primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" class="btn-primary" target="_blank">LinkedIn</a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+<footer>
+    <p>&copy; Devika T V. All rights reserved.</p>
+</footer>
