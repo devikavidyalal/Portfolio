@@ -5,85 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devika T V - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <!--
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Devika T V</a>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
-    -->
-    <!-- Header -->
-    
-    <header class="text-center">
-        <h1>Hi, I'm Devika T V...!!</h1>
-        <h3>Student Engineer </h3>
-        <p>Python | Flask | Django | Machine Learning | Content Writing</p>
-    </header>
-    
+
+    <!-- Hero Section -->
+    <section id="home" class="section">
+        <div class="container">
+            
+                </div>
+                <div class="hero-text">
+                    <h1 class="animate-on-scroll">Hi, I'm Devika T V</h1>
+                    <h3 class="animate-on-scroll">Student Engineer</h3>
+                    <h2 class="animate-on-scroll">Python | Machine Learning | MongoDB | Flask | Django | Content Writing</h2>
+                    
+                    <br><br> 
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button-primary animate-on-scroll">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="button-secondary animate-on-scroll">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/devikavidyalal24" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:devikatv2410@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Devika T V" class="profile-img">
-        <p>I am a passionate Computer Science student with a foundational knowledge in Python, MongoDB, Flask, Django, and Machine Learning. I have experience in content writing, leadership, and event coordination. As an IEEE volunteer, I have demonstrated strong communication and organizational skills. My goal is to work in a tech-driven, innovative environment where I can continuously learn and contribute.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="profile-img-container animate-on-scroll">
+                    <img src="profile.jpg" alt="Devika T V" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <p class="animate-on-scroll">I’m a final-year BTech Computer Science and Engineering student passionate about Machine Learning and Web Development. I have experience working with Flask, Django, Python, and MongoDB and have built projects like Cyberbullying Detection using Logistic Regression and ResQlink, a voice-activated emergency alert system.</p>
+                    <p class="animate-on-scroll">Let’s connect and create something amazing!</p>
+                    <div class="about-buttons">
+                        <a href="resume.pdf" class="button-primary animate-on-scroll" target="_blank">
+                            <i class="fas fa-file-alt"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="card" onclick="openModal('project1-modal')">
-        <h3>ResQlink</h3>
-        <p>Kidnap Detection and Emergency Alert System</p>
-    </div>
-    <!--
-    <div class="card" onclick="openModal('project2-modal')">
-        <h3>Project 2</h3>
-        <p>Another project description.</p>
-    </div>
-    -->
-</section>
-
-<!-- Project Details Modals -->
-<div id="project1-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('project1-modal')">&times;</span>
-        <h3>ResQlink</h3>
-        <p><strong>Description:</strong> ResQlink is a smart safety web app that detects emergencies through a predefined codeword. When spoken, it triggers real-time alerts via email and SMS to emergency contacts, including live location, captured image, nearest police station details, and weapon detection.
-
-        If speaking isn’t an option, a chatbot assists with distress signaling and travel monitoring. Leveraging AI and real-time communication, ResQlink ensures swift emergency response and enhanced personal security.</p>
-        <p><strong>Technologies Used:</strong> Python, MondoDB, Flask, Machine Learning, Twilio API.</p>
-        <!--<p><strong>GitHub Link:</strong> <a href="https://github.com/yourusername/resqvoice" target="_blank">ResQlink</a></p>-->
-    </div>
-</div>
-
-<div id="project2-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('project2-modal')">&times;</span>
-        <h3>Project 2</h3>
-        <p><strong>Description:</strong> Another project description.</p>
-        <p><strong>Technologies Used:</strong> Python, Django, MongoDB.</p>
-        <p><strong>GitHub Link:</strong> <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a></p>
-    </div>
-</div>
-    </section>
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Python | Flask | Django | Machine Learning | MongoDB | Content Writing | Leadership | Documentation | Team work | Communication | Problem Solving </p>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>MongoDB</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Flask</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Django</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Content Writing</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Documentation</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Leadership</h3>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <h3>Event Management</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Projects</h2>
+            <br><br>
+            <div class="content-wrapper">
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>ResQlink</h3>
+                            <p>An emergency response system connecting users with nearby medical facilities in real-time.</p>
+                            <a href="projects/resqlink.html" class="button-secondary">
+                                Learn More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Cyberbullying Detection</h3>
+                            <p>A machine learning project to detect and prevent cyberbullying in social media content using NLP techniques.</p>
+                            <a href="projects/cyberbullying.html" class="button-secondary">
+                                Learn More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>MindScribe</h3>
+                            <p>A mental health journaling application with mood tracking and analysis using sentiment analysis.</p>
+                            <a href="projects/mindscribe.html" class="button-secondary">
+                                Learn More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <a href="mailto:devikatv2410@gmail.com" class="btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" class="btn-primary" target="_blank">LinkedIn</a>
-    </section>
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h3 class="animate-on-scroll">Let's Work Together</h3>
+                <p class="animate-on-scroll">
+                    I'm always interested in hearing about new projects and opportunities. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-buttons">
+                    <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" class="button-primary animate-on-scroll" target="_blank">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                    <a href="mailto:devikatv2410@gmail.com" class="button-secondary animate-on-scroll">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                    <a href="https://github.com/your-github-username" class="button-primary animate-on-scroll" target="_blank">
+                        <i class="fab fa-github"></i> Visit My GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Devika T V. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-<footer>
-    <p>&copy; Devika T V. All rights reserved.</p>
-</footer>
