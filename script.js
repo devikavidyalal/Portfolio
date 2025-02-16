@@ -133,4 +133,57 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = 'translateY(0)';
         });
     });
+
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your public key
+    })();
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitButton.disabled = true;
+            
+            // Get form data
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_name: 'Devika',
+                to_email: 'devikatv2410@gmail.com'
+            };
+            
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function() {
+                    formStatus.textContent = 'Message sent successfully!';
+                    formStatus.className = 'success';
+                    contactForm.reset();
+                })
+                .catch(function(error) {
+                    formStatus.textContent = 'Failed to send message. Please try again.';
+                    formStatus.className = 'error';
+                    console.error('EmailJS Error:', error);
+                })
+                .finally(function() {
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                    
+                    // Clear status message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.textContent = '';
+                        formStatus.className = '';
+                    }, 5000);
+                });
+        });
+    }
 });
