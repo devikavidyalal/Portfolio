@@ -1,236 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devika T V - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devika T V - Python Developer</title>
+<meta name="description" content="Devika T V - Computer Science Engineer and Python Developer specialising in Flask, MongoDB and applied machine learning.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-links">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="ieee.html" class="nav-link">IEEE</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-            </div>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mono">D</span>
+      <span class="brand-name">Devika T V</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#journey" class="nav-link">Journey</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="ieee.html" class="nav-link">IEEE</a>
+      <a href="#contact" class="nav-link nav-link-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="section hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      
+      <h1>Devika T V</h1>
+      <p class="hero-role">Python Developer | Backend & Machine Learning</p>
+      <p class="hero-desc">
+      Computer Science graduate and Python Developer with experience building backend web applications using Python, Flask and MongoDB. I also develop and integrate machine learning solutions into real-world software, combining software engineering with practical AI.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-book-open"></i>
+          View My Work
+        </a>
+        <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+          <i class="fas fa-arrow-down"></i>
+          Resume
+        </a>
+      </div>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/devikavidyalal" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:devikatv2410@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-portrait">
+      <div class="folio-card portrait-card">
+        <img src="profile2.png" alt="Devika T V">
+      </div>
+      <div class="portrait-tag">
+        <span class="pulse-dot"></span>
+        Maybe Your Company Is My Next Page
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <span class="ribbon">Chapter One - About</span>
+    <h2 class="section-title">The Short Version</h2>
+
+    <div class="about-grid">
+      <div class="folio-card quote-card">
+        <i class="fas fa-quote-left quote-mark"></i>
+        <p class="quote-text">
+        Every project is an opportunity to write better software, learn something new, and create meaningful solutions.
+        </p>
+        <div class="quote-divider"></div>
+        <div class="quote-stack">
+          <span><i class="devicon-python-plain colored"></i>Python</span>
+          <span><i class="devicon-flask-original"></i>Flask</span>
+          <span><i class="devicon-mongodb-plain colored"></i>MongoDB</span>
         </div>
-    </nav>
+      </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="section">
-        <div class="container">
-            
-                </div>
-                <div class="hero-text">
-                    <h1 class="animate-on-scroll">Hi, I'm Devika T V</h1>
-                    <h3 class="animate-on-scroll">Computer Science Engineer</h3>
-                    <h2 class="animate-on-scroll">Python | Machine Learning | MongoDB | Flask | Content Writing</h2>
-                    
-                    <br><br> 
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button-primary animate-on-scroll">
-                            <i class="fas fa-code"></i>
-                            View My Work
-                        </a>
-                        <a href="#contact" class="button-secondary animate-on-scroll">
-                            <i class="fas fa-envelope"></i>
-                            Contact Me
-                        </a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/devikavidyalal" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:devikatv2410@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-    </section>
+      <div class="about-copy">
+        <p>I'm a Computer Science graduate and Python developer with hands-on experience building backend web applications using Python, Flask and MongoDB. During my internship I developed scalable web applications, REST APIs, authentication modules, database-driven features, and integrated machine learning models into real-world products.</p>
+        <p>My interests sit at the intersection of backend engineering, data, and machine learning - and I enjoy the discipline of solving a real problem with the simplest tool that will actually last.</p>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">About Me</h2>
-            <div class="about-content">
-                <div class="profile-img-container animate-on-scroll">
-                    <img src="profile.jpg" alt="Devika T V" class="profile-img">
-                </div>
-                
-                    <div class="about-text">
-    <p class="animate-on-scroll">
-        I’m a Computer Science Engineer passionate about Machine Learning and Web Development. 
-        I have worked with Flask, Python, and MongoDB, and built projects like:
-    </p>
-    <ul class="animate-on-scroll">
-        <li>Cyberbullying Detection using Logistic Regression</li>
-        <li>ResQlink – a voice-activated emergency alert system</li>
-        <li>JobConnect – a job portal app</li>
+        <div class="toc-mini">
+          <div class="toc-mini-row">
+            <i class="fas fa-heart-pulse"></i>
+            <span class="toc-mini-title">ResQlink</span>
+            <span class="toc-mini-desc">Smart kidnap detection &amp; emergency alert system</span>
+          </div>
+          <div class="toc-mini-row">
+            <i class="fas fa-briefcase"></i>
+            <span class="toc-mini-title">JobConnect</span>
+            <span class="toc-mini-desc">Role-based recruitment portal</span>
+          </div>
+          <div class="toc-mini-row">
+            <i class="fas fa-shield-halved"></i>
+            <span class="toc-mini-title">Cyberbullying Detection</span>
+            <span class="toc-mini-desc">NLP-based machine learning application</span>
+          </div>
+        </div>
+
+        <p class="about-cta-line">Currently looking for a Python Developer role where I can build scalable software, contribute to real products, and apply machine learning when it adds value.</p>
+
+        <div class="about-buttons">
+          <a href="resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fas fa-file-arrow-down"></i>
+            Download Resume
+          </a>
+          <a href="story.html" class="btn btn-outline">
+            <i class="fas fa-feather"></i>
+            Do you want to know me more?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="section section-alt">
+  <div class="container">
+    <span class="ribbon">Chapter Two - Journey</span>
+    <h2 class="section-title">Table of Contents</h2>
+
+    <div class="toc-list">
+      <a href="btech.html" class="toc-row">
+        <span class="toc-num">I</span>
+        <i class="fas fa-graduation-cap"></i>
+        <span class="toc-title">Started B.Tech in Computer Science</span>
+        <span class="toc-leader"></span>
+        <span class="toc-page">2021</span>
+      </a>
+
+      <a href="ieee.html" class="toc-row">
+        <span class="toc-num">II</span>
+        <i class="fas fa-bolt"></i>
+        <span class="toc-title">Growing Through IEEE</span>
+        <span class="toc-leader"></span>
+        <span class="toc-page">2023</span>
+      </a>
+
+      <button class="toc-row toc-row-button" onclick="openModal('internModal')">
+        <span class="toc-num">III</span>
+        <i class="fas fa-laptop-code"></i>
+        <span class="toc-title">Python Developer Intern - Revertech IT Solutions</span>
+        <span class="toc-leader"></span>
+        <span class="toc-page">2025</span>
+      </button>
+
+      <div class="toc-row toc-row-static toc-row-active">
+        <span class="toc-num">IV</span>
+        <i class="fas fa-rocket"></i>
+        <span class="toc-title">Could Your Company Be My Next Milestone?</span>
+        <span class="toc-leader"></span>
+        <span class="toc-page">2026</span>
+      </div>
+    </div>
+    <p class="toc-footnote">Ready to turn ideas into software, take on real-world challenges, and grow alongside a strong engineering team.</p>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <span class="ribbon">Chapter Three - Skills</span>
+    <h2 class="section-title">The Toolkit</h2>
+
+    <div class="skills-columns">
+      <div class="folio-card index-card">
+        <span class="index-card-tab">Core Stack</span>
+        <div class="pkg-list">
+          <div class="pkg-row">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="pkg-row">
+            <i class="devicon-flask-original"></i>
+            <span>Flask</span>
+          </div>
+          <div class="pkg-row">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+          </div>
+          <!-- <div class="pkg-row">
+            <i class="devicon-pandas-plain colored"></i>
+            <span>Pandas</span>
+          </div> -->
+          <div class="pkg-row">
+            <i class="fas fa-brain"></i>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="folio-card index-card">
+        <span class="index-card-tab">Core Strengths</span>
+        <div class="tag-grid">
+          <span class="tag-chip"><i class="fas fa-pen-nib"></i>Content Writing & Documentation</span>
+          <span class="tag-chip"><i class="fas fa-people-group"></i>Leadership</span>
+          <span class="tag-chip"><i class="fas fa-file-lines"></i>Proposal & Report Writing</span>
+          <span class="tag-chip"><i class="fas fa-diagram-project"></i>Problem Solving</span>
+          <span class="tag-chip"><i class="fas fa-calendar-check"></i>Event Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <span class="ribbon">Chapter Four - Projects</span>
+    <h2 class="section-title">Case Files</h2>
+
+    <div class="projects-grid">
+      <article class="folio-card project-card">
+        <div class="project-head">
+          <span class="case-label">Case No. 01</span>
+        </div>
+        <i class="fas fa-heart-pulse project-icon"></i>
+        <h3>ResQlink</h3>
+        <p>A smart emergency response platform with voice activation, SOS alerts, and AI-assisted safety monitoring.</p>
+        <div class="tag-row">
+          <span>Flask</span>
+          <span>MongoDB</span>
+        </div>
+        <a href="projects/resqlink.html" class="text-link">
+          Read the case study <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="folio-card project-card">
+        <div class="project-head">
+          <span class="case-label">Case No. 02</span>
+        </div>
+        <i class="fas fa-shield-halved project-icon"></i>
+        <h3>Cyberbullying Detection</h3>
+        <p>A machine learning project to detect and prevent cyberbullying in social media content using NLP techniques.</p>
+        <div class="tag-row">
+          <span>Python</span>
+          <span>NLP</span>
+        </div>
+        <a href="projects/cyberbullying.html" class="text-link">
+          Read the case study <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="folio-card project-card">
+        <div class="project-head">
+          <span class="case-label">Case No. 03</span>
+        </div>
+        <i class="fas fa-briefcase project-icon"></i>
+        <h3>JobConnect</h3>
+        <p>A role-based recruitment portal with job search filters, saved jobs and automated email updates.</p>
+        <div class="tag-row">
+          <span>Flask</span>
+          <span>MongoDB</span>
+        </div>
+        <a href="projects/jobconnect.html" class="text-link">
+          Read the case study <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <span class="ribbon">Chapter Five - Contact</span>
+    <h2 class="section-title">Let's Start the Next Chapter</h2>
+
+    <div class="contact-wrap">
+      <div class="folio-card letter-card">
+        <i class="fas fa-envelope-open-text letter-icon"></i>
+        <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, I'd genuinely like to hear from you.</p>
+      </div>
+
+      <div class="contact-actions">
+        <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" class="btn btn-primary" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+        </a>
+        <a href="mailto:devikatv2410@gmail.com" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Send an Email
+        </a>
+        <a href="https://github.com/devikavidyalal" class="btn btn-outline" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> Visit My GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <span class="brand-mono">D</span>
+    <p>&copy; 2026 Devika T V. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="internModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('internModal')">&times;</span>
+    <span class="ribbon">Chapter Three</span>
+    <h2>Building Real-World Software</h2>
+    <p class="modal-role"><strong>Python Developer Intern</strong><br>Revertech IT Solutions</p>
+    <hr>
+    <ul>
+      <li>Developed multiple Flask-based web applications.</li>
+      <li>Designed REST APIs and authentication modules.</li>
+      <li>Built MongoDB database-driven features.</li>
+      <li>Integrated machine learning models.</li>
+      <li>Implemented role-based access control.</li>
+      <li>Developed file upload and validation modules.</li>
     </ul>
-    <p class="animate-on-scroll">
-        I enjoy turning ideas into real-world solutions. Let’s connect and create something meaningful!
-    </p>
+    <h4>Technologies</h4>
+    <div class="modal-skills">
+      <span>Python</span>
+      <span>Flask</span>
+      <span>MongoDB</span>
+      <span>REST API</span>
+      <span>Machine Learning</span>
+    </div>
+  </div>
+</div>
 
-
-                    <div class="about-buttons">
-                        <a href="resume.pdf" class="button-primary animate-on-scroll" target="_blank">
-                            <i class="fas fa-file-alt"></i>
-                            Download Resume
-                        </a>
-                        <a href="story.html" class="button-secondary animate-on-scroll">
-                            <i class="fas fa-book"></i>
-                            Do you want to know me more?
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Skills</h2>
-            <div class="skills-content">
-                <div class="skills-grid">
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>MongoDB</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Flask</h3>
-                    </div>
-                    
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Machine Learning</h3>
-                    </div>
-
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Content Writing</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Documentation</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Problem Solving</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Leadership</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Event Management</h3>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <h3>Team Work</h3>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Projects</h2>
-            <br><br>
-            <div class="content-wrapper">
-                <div class="projects-grid">
-                    <div class="project-card animate-on-scroll">
-                        <div class="card-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>ResQlink</h3>
-                            <p>An emergency response system connecting users with nearby medical facilities in real-time.</p>
-                            <a href="projects/resqlink.html" class="button-secondary">
-                                See More
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card animate-on-scroll">
-                        <div class="card-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Cyberbullying Detection</h3>
-                            <p>A machine learning project to detect and prevent cyberbullying in social media content using NLP techniques.</p>
-                            <a href="projects/cyberbullying.html" class="button-secondary">
-                                See More
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card animate-on-scroll">
-                        <div class="card-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>JobConnect</h3>
-                            <p>JobConnect is a web app that connects job seekers and recruiters with features like job search filters, saved jobs, and automated email updates.</p>
-                            <a href="projects/jobconnect.html" class="button-secondary">
-                                See More
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3 class="animate-on-scroll">Let's Work Together</h3>
-                    <p class="animate-on-scroll">
-                        I'm always interested in hearing about new projects and opportunities. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                </div>
-                <div class="social-buttons animate-on-scroll">
-                    <a href="https://www.linkedin.com/in/devika-t-v-1b8453234" class="button-primary" target="_blank">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                    </a>
-                    <a href="mailto:devikatv2410@gmail.com" class="button-secondary">
-                        <i class="fas fa-envelope"></i> Send Email
-                    </a>
-                    <a href="https://github.com/devikavidyalal" class="button-primary" target="_blank">
-                        <i class="fab fa-github"></i> Visit My GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Devika T V. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

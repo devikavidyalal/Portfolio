@@ -5,46 +5,56 @@
     <title>My Story - Devika T V</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="story.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="motion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header class="chapter-bar">
+        <a href="index.html" class="chapter-brand">
+            <span class="brand-mono">D</span>
+            Devika T V
+        </a>
+        <a href="index.html" class="chapter-back">
+            <i class="fas fa-arrow-left"></i>
+            Home
+        </a>
+    </header>
+
     <header class="header">
-        <h1>My Story</h1>
-        <p>Every step made me who I am today 💙</p>
+        <span class="ribbon">My Story</span>
+        <h1>Every Chapter, Told</h1>
+        <p>Every step made me who I am today.</p>
     </header>
 
     <main class="story-container">
+        <div class="folio-card story-card">
+            <img src="images/btech_cover.jpeg" alt="B.Tech Journey Cover">
+            <div class="card-content">
+                <span class="card-tag">Chapter One</span>
+                <h3>My B.Tech Journey</h3>
+                <p>A story of lessons, laughter, tears, and transformation. A chapter that shaped who I am today.</p>
+                <a href="btech.html" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
 
-        <div class="story-card">
-    <img src="images/btech_cover.jpeg" alt="B.Tech Journey Cover">
-    <div class="card-content">
-        <h3>My B.Tech Journey</h3>
-        <p>A story of lessons, laughter, tears, and transformation. A chapter that shaped who I am today.</p>
-        <a href="btech.html" class="read-more">Read Full Story →</a>
-    </div>
-</div>
-
-
-
-        <!-- Single Card for IEEE Story -->
-        <div class="story-card">
+        <div class="folio-card story-card">
             <img src="images/ieee_cover.JPG" alt="IEEE Journey">
             <div class="card-content">
-                <h2>How IEEE Changed Me</h2>
-                <p>
-                    From an introvert afraid of public speaking to mentoring and leading others – this is my journey of transformation with IEEE.  
-                </p>
-                <a href="ieee.html" class="read-more">Read Full Story →</a>
+                <span class="card-tag">Chapter Two</span>
+                <h3>How IEEE Changed Me</h3>
+                <p>From an introvert afraid of public speaking to mentoring and leading others - this is my journey of transformation with IEEE.</p>
+                <a href="ieee.html" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </main>
- <div class="back-home">
-    <a href="index.html" class="back-home-btn">← Back to Home</a>
-</div>
-    <footer class="footer">
-        <p>&copy; 2024 Devika T V | All Rights Reserved</p>
-    </footer>
-   
 
+    
+
+    <footer class="footer">
+        <p>&copy; 2026 Devika T V | All Rights Reserved</p>
+    </footer>
+<script src="motion.js"></script>
 </body>
 </html>

@@ -1,333 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResQlink Project - Devika T V</title>
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .project-details {
-            max-width: 800px;
-            margin: 100px auto;
-            padding: 2rem;
-        }
-        
-        .project-details h1 {
-            color: var(--secondary-color);
-            margin-bottom: 2rem;
-        }
-        
-        .project-details p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        
-        .tech-stack {
-            margin: 2rem 0;
-        }
-        
-        .tech-stack ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .tech-stack li {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-        }
-        
-        .back-btn {
-            display: inline-block;
-            margin-top: 2rem;
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .back-btn:hover {
-            color: var(--primary-color);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResQlink | Devika T V</title>
 
-        /* Image Slider Styles */
-        .slider-container {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
-            border-radius: 1rem;
-            overflow: hidden;
-        }
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="motion.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        .slider {
-            position: relative;
-            width: 100%;
-            height: 500px;
-        }
+<style>
+.project-page{
+    background:var(--paper);
+    color:var(--ink);
+}
 
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            display: none;
-        }
+.project-wrapper{
+    max-width:1000px;
+    margin:auto;
+    padding:120px 20px 80px;
+}
 
-        .slide.active {
-            opacity: 1;
-            display: block;
-        }
+.project-hero{
+    margin-bottom:40px;
+}
 
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            background: rgba(0, 0, 0, 0.8);
-        }
+.project-hero h1{
+    font-family:var(--font-display);
+    font-size:3rem;
+    margin:.8rem 0;
+}
 
-        .slide-description {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 1rem;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
+.project-subtitle{
+    color:var(--ink-soft);
+    line-height:1.8;
+    font-size:1.08rem;
+    max-width:760px;
+}
 
-        .slide.active .slide-description {
-            transform: translateY(0);
-        }
+.project-card{
+    padding:2rem;
+    margin-bottom:2rem;
+}
 
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 1rem;
-            z-index: 10;
-        }
+.project-card h2{
+    font-family:var(--font-display);
+    margin-top:0;
+}
 
-        .slider-nav button {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 1rem;
-            cursor: pointer;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s ease;
-        }
+.project-card p{
+    color:var(--ink-soft);
+    line-height:1.9;
+}
 
-        .slider-nav button:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
+.feature-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
 
-        .slider-dots {
-            position: absolute;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 0.5rem;
-            z-index: 10;
-        }
+.feature-list li{
+    display:flex;
+    gap:12px;
+    margin-bottom:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+}
 
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
+.feature-list i{
+    color:var(--rosewood);
+    margin-top:4px;
+}
 
-        .dot.active {
-            background: white;
-        }
+.tech-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.8rem;
+    margin-top:1.4rem;
+}
 
-        @media (max-width: 768px) {
-            .slider {
-                height: 300px;
-            }
-            
-            .slider-nav button {
-                width: 40px;
-                height: 40px;
-                padding: 0.5rem;
-            }
-        }
-    </style>
+.tech-grid span{
+    background:var(--rosewood-soft);
+    color:var(--rosewood-dark);
+    padding:.65rem 1rem;
+    border-radius:999px;
+    font-weight:600;
+    font-size:.9rem;
+}
+
+.slider-container{
+    position:relative;
+    margin-top:2rem;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.slider{
+    position:relative;
+    width:100%;
+    height:560px;
+    background:#111;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    transition:.35s;
+    pointer-events:none;
+}
+
+.slide.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#111;
+}
+
+.slider-nav{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 18px;
+}
+
+.slider-nav button{
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:rgba(255,255,255,.9);
+    color:var(--ink);
+    transition:.25s;
+}
+
+.slider-nav button:hover{
+    transform:scale(1.08);
+}
+
+.slider-dots{
+    position:absolute;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:8px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,.4);
+    cursor:pointer;
+}
+
+.dot.active{
+    background:#fff;
+}
+
+.back-row{
+    margin-top:2rem;
+}
+
+@media(max-width:768px){
+
+.project-wrapper{
+    padding:100px 18px 60px;
+}
+
+.project-hero h1{
+    font-size:2.2rem;
+}
+
+.project-card{
+    padding:1.5rem;
+}
+
+.slider{
+    height:320px;
+}
+
+.slider-nav button{
+    width:40px;
+    height:40px;
+}
+
+}
+</style>
 </head>
+
 <body class="project-page">
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="../index.html" class="logo">Devika T V</a>
-            <div class="nav-links">
-                <a href="../index.html#home">Home</a>
-                <a href="../index.html#about">About</a>
-                <a href="../index.html#skills">Skills</a>
-                <a href="../index.html#projects">Projects</a>
-                <a href="../index.html#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <div class="project-details">
-        <h1>ResQlink</h1>
-        
-        <p><strong>Description:</strong></p>
-        <p>ResQlink is a smart safety web app that detects emergencies through a predefined codeword. When spoken, it triggers real-time alerts via email and SMS to emergency contacts, including live location, captured image, nearest police station details, and weapon detection.</p>
-        
-        <p>If speaking isn’t an option, a chatbot assists with distress signaling and travel monitoring. Leveraging AI and real-time communication, ResQlink ensures swift emergency response and enhanced personal security.</p>
-        
-        <!-- Project Gallery Section -->
-        <div class="project-gallery">
-            <h2>Project Gallery</h2>
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide active">
-                        <img src="../images/resqlink/1.png" alt="ResQLink Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/2.png" alt="ResQLink Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/3.png" alt="ResQLink Image 3">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/4.png" alt="ResQLink Image 4">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/5.png" alt="ResQLink Image 5">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/6.png" alt="ResQLink Image 6">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/resqlink/7.png" alt="ResQLink Image 7">
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="slider-dots"></div>
-            </div>
-        </div>
-        
-        <div class="tech-stack">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li>Python</li>
-                <li>MongoDB</li>
-                <li>Flask</li>
-                <li>Machine Learning</li>
-                <li>Twilio API</li>
-            </ul>
-        </div>
-        
-        <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
-    </div>
+<nav class="navbar" id="navbar">
 
-   
-</body>
+<div class="container nav-inner">
+
+<a href="../index.html" class="brand">
+<span class="brand-mono">D</span>
+<span class="brand-name">Devika T V</span>
+</a>
+
+<div class="nav-links">
+<a href="../index.html#home" class="nav-link">Home</a>
+<a href="../index.html#about" class="nav-link">About</a>
+<a href="../index.html#journey" class="nav-link">Journey</a>
+<a href="../index.html#skills" class="nav-link">Skills</a>
+<a href="../index.html#projects" class="nav-link active">Projects</a>
+</div>
+
+</div>
+
+</nav>
+
+<section class="project-wrapper">
+
+<div class="project-hero">
+
+<span class="ribbon">Case File 01</span>
+
+<h1>ResQlink</h1>
+
+<p class="project-subtitle">
+A Flask-based emergency response platform that integrates machine learning, real-time alerts, travel safety monitoring and intelligent automation to provide rapid assistance during emergency situations.
+</p>
+
+</div>
+
+<div class="folio-card project-card">
+
+<h2>Project Overview</h2>
+
+<p>
+ResQlink is a full-stack emergency response platform developed using Python, Flask and MongoDB to improve personal safety through intelligent automation and rapid emergency communication. The system enables users to instantly alert trusted contacts and access emergency assistance during critical situations.
+</p>
+
+<p>
+The platform integrates voice-triggered emergency activation, location sharing, travel safety monitoring, real-time weapon detection using YOLO, automated image capture, SMS and email notifications, and nearby police station identification to provide a comprehensive emergency response solution.
+</p>
+
+</div>
+
+<div class="folio-card project-card">
+
+<h2>Key Features</h2>
+
+<ul class="feature-list">
+
+<li>
+<i class="fas fa-check-circle"></i>
+Voice-triggered emergency activation for hands-free assistance.
+</li>
+
+<li>
+<i class="fas fa-check-circle"></i>
+One-tap SOS with location sharing to trusted contacts.
+</li>
+
+<li>
+<i class="fas fa-check-circle"></i>
+Real-time weapon detection using the YOLO object detection model.
+</li>
+
+<li>
+<i class="fas fa-check-circle"></i>
+Automatic image capture during emergencies for evidence collection.
+</li>
+
+<li>
+<i class="fas fa-check-circle"></i>
+SMS and email notifications using Twilio integration.
+</li>
+
+<li>
+<i class="fas fa-check-circle"></i>
+Travel safety monitoring and nearby police station identification.
+</li>
+
+</ul>
+
+</div>
+
+<div class="folio-card project-card">
+
+<h2>Project Gallery</h2>
+
+<div class="slider-container">
+
+<div class="slider">
+
+<div class="slide active"><img src="../images/resqlink/1.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/2.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/3.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/4.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/5.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/6.png" alt=""></div>
+<div class="slide"><img src="../images/resqlink/7.png" alt=""></div>
+
+</div>
+
+<div class="slider-nav">
+<button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+<button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<div class="slider-dots"></div>
+
+</div>
+
+</div>
+<div class="folio-card project-card">
+
+<h2>Technologies Used</h2>
+
+<div class="tech-grid">
+<span>Python</span>
+<span>Flask</span>
+<span>MongoDB</span>
+<span>YOLO</span>
+<span>OpenCV</span>
+<span>Twilio API</span>
+<span>Machine Learning</span>
+<span>Email Automation</span>
+</div>
+
+</div>
+
+<div class="back-row">
+<a href="../index.html#projects" class="btn btn-primary">
+<i class="fas fa-arrow-left"></i>
+Back to Projects
+</a>
+</div>
+
+</section>
+
+<script src="../script.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const slider = document.querySelector('.slider');
-        const slides = document.querySelectorAll('.slide');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        const dotsContainer = document.querySelector('.slider-dots');
-        
-        let currentSlide = 0;
-        
-        // Create dots
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(index));
-            dotsContainer.appendChild(dot);
-        });
-        
-        const dots = document.querySelectorAll('.dot');
-        
-        function updateSlides() {
-            slides.forEach(slide => {
-                slide.classList.remove('active');
-            });
-            dots.forEach(dot => {
-                dot.classList.remove('active');
-            });
-            
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-        }
-        
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlides();
-        }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlides();
-        }
-        
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateSlides();
-        }
-        
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prevSlide();
-            if (e.key === 'ArrowRight') nextSlide();
-        });
-        
-        // Touch events for mobile
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        slider.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-        
-        slider.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-        
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            const swipeLength = touchEndX - touchStartX;
-            
-            if (Math.abs(swipeLength) > swipeThreshold) {
-                if (swipeLength > 0) {
-                    prevSlide();
-                } else {
-                    nextSlide();
-                }
-            }
-        }
-    });
+document.addEventListener('DOMContentLoaded',()=>{
+
+const slides=document.querySelectorAll('.slide');
+const prev=document.querySelector('.prev-btn');
+const next=document.querySelector('.next-btn');
+const dotsContainer=document.querySelector('.slider-dots');
+
+let current=0;
+
+slides.forEach((_,index)=>{
+const dot=document.createElement('div');
+dot.className='dot';
+if(index===0) dot.classList.add('active');
+dot.onclick=()=>show(index);
+dotsContainer.appendChild(dot);
+});
+
+const dots=document.querySelectorAll('.dot');
+
+function show(index){
+slides.forEach(s=>s.classList.remove('active'));
+dots.forEach(d=>d.classList.remove('active'));
+current=index;
+slides[current].classList.add('active');
+dots[current].classList.add('active');
+}
+
+next.onclick=()=>{
+show((current+1)%slides.length);
+};
+
+prev.onclick=()=>{
+show((current-1+slides.length)%slides.length);
+};
+
+});
 </script>
+<script src="motion.js"></script>
+</body>
 </html>
