@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JobConnect | Devika T V</title>
+
+<title>SkillSense | Devika T V</title>
 
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="motion.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
 <style>
+
 .project-page{
     background:var(--paper);
     color:var(--ink);
 }
+
 
 .project-wrapper{
     max-width:1000px;
@@ -23,15 +31,18 @@
     padding:120px 20px 80px;
 }
 
+
 .project-hero{
     margin-bottom:40px;
 }
+
 
 .project-hero h1{
     font-family:var(--font-display);
     font-size:3rem;
     margin:.8rem 0;
 }
+
 
 .project-subtitle{
     color:var(--ink-soft);
@@ -40,100 +51,143 @@
     max-width:760px;
 }
 
+
+
 .project-card{
     padding:2rem;
     margin-bottom:2rem;
 }
+
 
 .project-card h2{
     font-family:var(--font-display);
     margin-top:0;
 }
 
+
 .project-card p{
     color:var(--ink-soft);
     line-height:1.9;
 }
 
+
+
 .feature-list{
+
     list-style:none;
     padding:0;
     margin:0;
+
 }
 
+
 .feature-list li{
+
     display:flex;
     gap:12px;
     margin-bottom:1rem;
     color:var(--ink-soft);
     line-height:1.7;
+
 }
+
 
 .feature-list i{
+
     color:var(--rosewood);
     margin-top:4px;
+
 }
 
+
+
 .tech-grid{
+
     display:flex;
     flex-wrap:wrap;
     gap:.8rem;
     margin-top:1.4rem;
+
 }
 
+
 .tech-grid span{
+
     background:var(--rosewood-soft);
     color:var(--rosewood-dark);
     padding:.65rem 1rem;
     border-radius:999px;
     font-weight:600;
     font-size:.9rem;
+
 }
 
+
+
 .slider-container{
+
     position:relative;
     margin-top:2rem;
     border-radius:18px;
     overflow:hidden;
+
 }
 
+
 .slider{
+
     position:relative;
     width:100%;
     height:560px;
     background:#111;
+
 }
 
+
 .slide{
+
     position:absolute;
     inset:0;
     opacity:0;
     transition:.35s;
     pointer-events:none;
+
 }
+
 
 .slide.active{
+
     opacity:1;
     pointer-events:auto;
+
 }
 
+
 .slide img{
+
     width:100%;
     height:100%;
     object-fit:contain;
     background:#111;
+
 }
 
+
+
 .slider-nav{
+
     position:absolute;
     inset:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 18px;
+
 }
 
+
 .slider-nav button{
+
     width:48px;
     height:48px;
     border:none;
@@ -141,246 +195,457 @@
     cursor:pointer;
     background:rgba(255,255,255,.9);
     color:var(--ink);
-    transition:.25s;
+
 }
 
-.slider-nav button:hover{
-    transform:scale(1.08);
-}
 
 .slider-dots{
+
     position:absolute;
     bottom:18px;
     left:50%;
     transform:translateX(-50%);
     display:flex;
     gap:8px;
+
 }
 
+
 .dot{
+
     width:10px;
     height:10px;
     border-radius:50%;
     background:rgba(255,255,255,.4);
     cursor:pointer;
+
 }
+
 
 .dot.active{
+
     background:#fff;
+
 }
+
+
 
 .back-row{
+
     margin-top:2rem;
-}
-
-@media(max-width:768px){
-
-.project-wrapper{
-    padding:100px 18px 60px;
-}
-
-.project-hero h1{
-    font-size:2.2rem;
-}
-
-.project-card{
-    padding:1.5rem;
-}
-
-.slider{
-    height:320px;
-}
-
-.slider-nav button{
-    width:40px;
-    height:40px;
-}
 
 }
+
+
 </style>
+
 </head>
+
+
 
 <body class="project-page">
 
-<nav class="navbar" id="navbar">
+
+<nav class="navbar">
+
 <div class="container nav-inner">
 
+
 <a href="../index.html" class="brand">
+
 <span class="brand-mono">D</span>
-<span class="brand-name">Devika T V</span>
+
+<span class="brand-name">
+Devika T V
+</span>
+
 </a>
 
+
+
 <div class="nav-links">
-<a href="../index.html#home" class="nav-link">Home</a>
-<a href="../index.html#about" class="nav-link">About</a>
-<a href="../index.html#journey" class="nav-link">Journey</a>
-<a href="../index.html#skills" class="nav-link">Skills</a>
-<a href="../index.html#projects" class="nav-link active">Projects</a>
-</div>
+
+<a href="../index.html#home" class="nav-link">
+Home
+</a>
+
+<a href="../index.html#about" class="nav-link">
+About
+</a>
+
+<a href="../index.html#skills" class="nav-link">
+Skills
+</a>
+
+<a href="../index.html#projects" class="nav-link active">
+Projects
+</a>
+
 
 </div>
+
+
+</div>
+
 </nav>
+
+
 
 <section class="project-wrapper">
 
-<div class="project-hero">
-<span class="ribbon">Case File 03</span>
 
-<h1>JobConnect</h1>
+
+<div class="project-hero">
+
+<span class="ribbon">
+Case File 03
+</span>
+
+
+<h1>
+SkillSense
+</h1>
+
 
 <p class="project-subtitle">
-A role-based recruitment platform developed using Python, Flask and MongoDB that connects administrators, recruiters and job seekers through a secure and streamlined hiring workflow.
-</p>
-</div>
 
-<div class="folio-card project-card">
+An AI-powered career assistant that analyzes resumes, matches job descriptions, and provides personalized career guidance using semantic search, Retrieval-Augmented Generation (RAG), and Large Language Models.
 
-<h2>Project Overview</h2>
-
-<p>
-JobConnect is a full-stack recruitment portal designed to simplify the hiring process for recruiters while providing job seekers with an easy way to discover and apply for opportunities. The application supports multiple user roles with secure authentication and authorization.
 </p>
 
-<p>
-The system includes recruiter approval workflows, job posting, resume uploads, application tracking, search functionality, automated email notifications and dashboard management, making it a complete recruitment management solution.
-</p>
 
 </div>
 
+
+
+
+
 <div class="folio-card project-card">
 
-<h2>Key Features</h2>
+<h2>
+Project Overview
+</h2>
+
+
+<p>
+
+SkillSense is an AI career coaching platform designed to help job seekers improve their career readiness. The application analyzes uploaded resumes, identifies strengths and missing skills, evaluates compatibility with job descriptions, and provides AI-driven career guidance.
+
+</p>
+
+
+<p>
+
+The system uses a Flask backend following a service and repository architecture. Resume and job matching features are powered by Sentence Transformer embeddings, while the career assistant uses a Retrieval-Augmented Generation pipeline with FAISS vector search and Groq LLM.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="folio-card project-card">
+
+
+<h2>
+Key Features
+</h2>
+
 
 <ul class="feature-list">
 
-<li>
-<i class="fas fa-check-circle"></i>
-Role-based authentication for administrators, recruiters and job seekers.
-</li>
 
 <li>
 <i class="fas fa-check-circle"></i>
-Job posting, application management and resume upload.
+AI-based resume analysis with strengths, weaknesses, missing skills and improvement suggestions.
 </li>
+
 
 <li>
 <i class="fas fa-check-circle"></i>
-Recruiter approval workflow with secure access control.
+Semantic resume-to-job description matching using Sentence Transformers and cosine similarity.
 </li>
+
 
 <li>
 <i class="fas fa-check-circle"></i>
-Automated email notifications throughout the recruitment process.
+RAG-powered career chatbot that retrieves relevant knowledge from FAISS vector database.
 </li>
+
 
 <li>
 <i class="fas fa-check-circle"></i>
-MongoDB-powered data storage for users, jobs and applications.
+Secure authentication system with user sessions and JWT integration.
 </li>
+
 
 <li>
 <i class="fas fa-check-circle"></i>
-Search functionality, form validation and recruiter dashboard.
+MongoDB-based storage for user data and analysis records.
 </li>
+
+
+<li>
+<i class="fas fa-check-circle"></i>
+Modular Flask architecture using routes, services and repositories.
+</li>
+
 
 </ul>
 
+
 </div>
+
+
+
+
+
 
 <div class="folio-card project-card">
 
-<h2>Project Gallery</h2>
+
+<h2>
+Project Gallery
+</h2>
+
+
 
 <div class="slider-container">
 
+
 <div class="slider">
 
-<div class="slide active"><img src="../images/jobconnect/1.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/2.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/3.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/4.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/5.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/6.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/7.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/8.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/9.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/10.png" alt=""></div>
-<div class="slide"><img src="../images/jobconnect/11.png" alt=""></div>
+
+<div class="slide active">
+<img src="../images/skillsense/1.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/2.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/3.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/4.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/5.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/6.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/7.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/8.png">
+</div>
+
+
+<div class="slide">
+<img src="../images/skillsense/9.png">
+</div>
+
 
 </div>
+
+
+
 
 <div class="slider-nav">
-<button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-<button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+
+<button class="prev-btn">
+<i class="fas fa-chevron-left"></i>
+</button>
+
+
+<button class="next-btn">
+<i class="fas fa-chevron-right"></i>
+</button>
+
+
 </div>
+
+
 
 <div class="slider-dots"></div>
 
-</div>
+
 
 </div>
+
+
+</div>
+
+
+
+
+
 
 <div class="folio-card project-card">
 
-<h2>Tech Stack</h2>
+
+<h2>
+Tech Stack
+</h2>
+
 
 <div class="tech-grid">
+
 <span>Python</span>
+
 <span>Flask</span>
+
 <span>MongoDB</span>
-</div>
+
+<span>Sentence Transformers</span>
+
+<span>FAISS</span>
+
+<span>Groq LLM</span>
+
+<span>RAG</span>
 
 </div>
+
+
+</div>
+
+
+
 
 <div class="back-row">
+
 <a href="../index.html#projects" class="btn btn-primary">
+
 <i class="fas fa-arrow-left"></i>
+
 Back to Projects
+
 </a>
+
+
 </div>
+
+
 
 </section>
 
+
+
+
+
 <script src="../script.js"></script>
 
+
 <script>
+
+
 document.addEventListener('DOMContentLoaded',()=>{
 
+
 const slides=document.querySelectorAll('.slide');
+
 const prev=document.querySelector('.prev-btn');
+
 const next=document.querySelector('.next-btn');
+
 const dotsContainer=document.querySelector('.slider-dots');
+
 
 let current=0;
 
+
+
 slides.forEach((_,index)=>{
+
+
 const dot=document.createElement('div');
+
 dot.className='dot';
-if(index===0) dot.classList.add('active');
+
+
+if(index===0)
+dot.classList.add('active');
+
+
 dot.onclick=()=>show(index);
+
+
 dotsContainer.appendChild(dot);
+
+
 });
+
+
 
 const dots=document.querySelectorAll('.dot');
 
+
+
 function show(index){
+
+
 slides.forEach(s=>s.classList.remove('active'));
+
 dots.forEach(d=>d.classList.remove('active'));
+
+
 current=index;
+
+
 slides[current].classList.add('active');
+
 dots[current].classList.add('active');
+
+
 }
 
+
+
 next.onclick=()=>{
+
 show((current+1)%slides.length);
+
 };
+
+
 
 prev.onclick=()=>{
+
 show((current-1+slides.length)%slides.length);
+
 };
 
+
+
 });
+
+
 </script>
+
+
+
 <script src="motion.js"></script>
+
+
 </body>
+
 </html>
